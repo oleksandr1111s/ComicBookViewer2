@@ -20,6 +20,7 @@
 
     <Button
         android:id="@+id/c"
+        style="@style/CalculatorButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="c"
@@ -28,6 +29,7 @@
 
     <Button
         android:id="@+id/back"
+        style="@style/CalculatorButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="back"
@@ -36,6 +38,7 @@
 
     <Button
         android:id="@+id/div"
+        style="@style/CalculatorButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="/"
@@ -44,6 +47,7 @@
 
     <Button
         android:id="@+id/mult"
+        style="@style/CalculatorButton1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="*"
@@ -53,6 +57,7 @@
 
     <Button
         android:id="@+id/b7"
+        style="@style/CalculatorButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="7"
@@ -61,6 +66,7 @@
 
     <Button
         android:id="@+id/b8"
+        style="@style/CalculatorButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="8"
@@ -69,6 +75,7 @@
 
     <Button
         android:id="@+id/b9"
+        style="@style/CalculatorButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="9"
@@ -77,6 +84,7 @@
 
     <Button
         android:id="@+id/bMin"
+        style="@style/CalculatorButton1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="-"
@@ -86,6 +94,7 @@
 
     <Button
         android:id="@+id/b4"
+        style="@style/CalculatorButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="4"
@@ -94,6 +103,7 @@
 
     <Button
         android:id="@+id/b5"
+        style="@style/CalculatorButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5"
@@ -102,6 +112,7 @@
 
     <Button
         android:id="@+id/b6"
+        style="@style/CalculatorButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="6"
@@ -110,6 +121,7 @@
 
     <Button
         android:id="@+id/bPlus"
+        style="@style/CalculatorButton1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="+"
@@ -119,6 +131,7 @@
 
     <Button
         android:id="@+id/b1"
+        style="@style/CalculatorButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
@@ -127,6 +140,7 @@
 
     <Button
         android:id="@+id/b2"
+        style="@style/CalculatorButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2"
@@ -135,6 +149,7 @@
 
     <Button
         android:id="@+id/b3"
+        style="@style/CalculatorButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3"
@@ -143,6 +158,7 @@
 
     <Button
         android:id="@+id/bEq"
+        style="@style/CalculatorButton1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:autoText="false"
@@ -154,6 +170,7 @@
 
     <Button
         android:id="@+id/b0"
+        style="@style/CalculatorButton2"
         android:layout_width="173dp"
         android:layout_height="72dp"
         android:text="0"
@@ -162,6 +179,7 @@
 
     <Button
         android:id="@+id/point"
+        style="@style/CalculatorButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="."

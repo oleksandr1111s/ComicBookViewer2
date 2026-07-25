@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ComicBookViewer</string>
+    <string name="display">display</string>
 </resources>
