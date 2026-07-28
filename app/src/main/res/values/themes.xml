@@ -6,13 +6,17 @@
 
     </style>
 
-    <style name="Theme.ComicBookViewer" parent="Base.Theme.ComicBookViewer" >
+    <style name="Theme.ComicBookViewer" parent="Base.Theme.ComicBookViewer" />
     <style name="CalculatorButton1" parent="Widget.Material3.Button">
-        <item name="android:textColor">@color/magenta</item>
-        <item name="backgroundTint">@color/orange</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/blue</item>
     </style>
     <style name="CalculatorButton2" parent="Widget.Material3.Button">
-        <item name="android:textColor">@color/black</item>
-        <item name="backgroundTint">@color/magenta</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/grey</item>
+    </style>
+    <style name="CalculatorButton3" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/light_blue</item>
     </style>
 </resources>

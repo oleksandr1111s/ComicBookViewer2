@@ -19,41 +19,41 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/c"
+        android:id="@+id/Dugka1"
         style="@style/CalculatorButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="c"
+        android:text="("
         app:layout_constraintStart_toEndOf="@+id/x"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
 
     <Button
-        android:id="@+id/back"
+        android:id="@+id/Dugka2"
         style="@style/CalculatorButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="back"
-        app:layout_constraintStart_toEndOf="@+id/c"
-        app:layout_constraintTop_toTopOf="@+id/c" />
+        android:text=")"
+        app:layout_constraintStart_toEndOf="@+id/Dugka1"
+        app:layout_constraintTop_toTopOf="@+id/Dugka1" />
 
     <Button
-        android:id="@+id/div"
+        android:id="@+id/Vidsotok"
         style="@style/CalculatorButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="/"
-        app:layout_constraintStart_toEndOf="@+id/back"
-        app:layout_constraintTop_toTopOf="@+id/back" />
+        android:text="%"
+        app:layout_constraintStart_toEndOf="@+id/Dugka2"
+        app:layout_constraintTop_toTopOf="@+id/Dugka2" />
 
     <Button
-        android:id="@+id/mult"
+        android:id="@+id/ac"
         style="@style/CalculatorButton1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="*"
+        android:text="AC"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/div"
-        app:layout_constraintTop_toTopOf="@+id/div" />
+        app:layout_constraintStart_toEndOf="@+id/Vidsotok"
+        app:layout_constraintTop_toTopOf="@+id/Vidsotok" />
 
     <Button
         android:id="@+id/b7"
@@ -61,8 +61,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="7"
-        app:layout_constraintStart_toStartOf="@+id/c"
-        app:layout_constraintTop_toBottomOf="@+id/c" />
+        app:layout_constraintStart_toEndOf="@+id/in"
+        app:layout_constraintTop_toBottomOf="@+id/Dugka1" />
 
     <Button
         android:id="@+id/b8"
@@ -70,8 +70,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="8"
-        app:layout_constraintStart_toEndOf="@+id/c"
-        app:layout_constraintTop_toBottomOf="@+id/back" />
+        app:layout_constraintStart_toEndOf="@+id/b7"
+        app:layout_constraintTop_toBottomOf="@+id/Dugka2" />
 
     <Button
         android:id="@+id/b9"
@@ -79,18 +79,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="9"
-        app:layout_constraintStart_toEndOf="@+id/back"
-        app:layout_constraintTop_toBottomOf="@+id/div" />
+        app:layout_constraintStart_toEndOf="@+id/b8"
+        app:layout_constraintTop_toBottomOf="@+id/Vidsotok" />
 
     <Button
-        android:id="@+id/bMin"
+        android:id="@+id/bntDiv"
         style="@style/CalculatorButton1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="-"
+        android:text="/"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/div"
-        app:layout_constraintTop_toBottomOf="@+id/mult" />
+        app:layout_constraintStart_toEndOf="@+id/Vidsotok"
+        app:layout_constraintTop_toBottomOf="@+id/ac" />
 
     <Button
         android:id="@+id/b4"
@@ -120,14 +120,14 @@
         app:layout_constraintTop_toBottomOf="@+id/b9" />
 
     <Button
-        android:id="@+id/bPlus"
+        android:id="@+id/btnMulti"
         style="@style/CalculatorButton1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="+"
+        android:text="*"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toEndOf="@+id/b9"
-        app:layout_constraintTop_toBottomOf="@+id/bMin" />
+        app:layout_constraintTop_toBottomOf="@+id/bntDiv" />
 
     <Button
         android:id="@+id/b1"
@@ -157,57 +157,183 @@
         app:layout_constraintTop_toBottomOf="@+id/b6" />
 
     <Button
-        android:id="@+id/bEq"
-        style="@style/CalculatorButton1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:autoText="false"
-        android:text="="
-        app:layout_constraintBottom_toBottomOf="@+id/point"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/b6"
-        app:layout_constraintTop_toBottomOf="@+id/bPlus" />
-
-    <Button
         android:id="@+id/b0"
         style="@style/CalculatorButton2"
-        android:layout_width="173dp"
-        android:layout_height="72dp"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
         android:text="0"
-        app:layout_constraintStart_toStartOf="@+id/b1"
+        app:layout_constraintStart_toEndOf="@+id/xy"
         app:layout_constraintTop_toBottomOf="@+id/b1" />
 
     <Button
         android:id="@+id/point"
-        style="@style/CalculatorButton1"
+        style="@style/CalculatorButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="."
-        app:layout_constraintStart_toEndOf="@+id/b2"
-        app:layout_constraintTop_toBottomOf="@+id/b3" />
+        app:layout_constraintStart_toEndOf="@+id/b0"
+        app:layout_constraintTop_toBottomOf="@+id/b2" />
 
     <Button
         android:id="@+id/deg"
+        style="@style/CalculatorButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="deg"
-        app:layout_constraintTop_toTopOf="@+id/c"
-        tools:layout_editor_absoluteX="14dp" />
+        android:text="Deg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Dugka1" />
+
+    <Button
+        android:id="@+id/inv"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inv"
+        app:layout_constraintStart_toStartOf="@+id/deg"
+        app:layout_constraintTop_toBottomOf="@+id/deg" />
+
+    <Button
+        android:id="@+id/xy"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xʸ"
+        app:layout_constraintStart_toEndOf="@+id/exp"
+        app:layout_constraintTop_toBottomOf="@+id/W" />
+
+    <Button
+        android:id="@+id/exp"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXP"
+        app:layout_constraintStart_toEndOf="@+id/ans"
+        app:layout_constraintTop_toBottomOf="@+id/Tan" />
+
+    <Button
+        android:id="@+id/ans"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ans"
+        app:layout_constraintStart_toStartOf="@+id/E"
+        app:layout_constraintTop_toBottomOf="@+id/E" />
+
+    <Button
+        android:id="@+id/W"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="√"
+        app:layout_constraintStart_toEndOf="@+id/Tan"
+        app:layout_constraintTop_toBottomOf="@+id/Log" />
+
+    <Button
+        android:id="@+id/Tan"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tan"
+        app:layout_constraintStart_toEndOf="@+id/E"
+        app:layout_constraintTop_toBottomOf="@+id/Cos" />
+
+    <Button
+        android:id="@+id/E"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="e"
+        app:layout_constraintStart_toStartOf="@+id/bP"
+        app:layout_constraintTop_toBottomOf="@+id/bP" />
+
+    <Button
+        android:id="@+id/bP"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="π"
+        app:layout_constraintStart_toStartOf="@+id/inv"
+        app:layout_constraintTop_toBottomOf="@+id/inv" />
+
+    <Button
+        android:id="@+id/Cos"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cos"
+        app:layout_constraintStart_toEndOf="@+id/bP"
+        app:layout_constraintTop_toBottomOf="@+id/Sin" />
+
+    <Button
+        android:id="@+id/Log"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log"
+        app:layout_constraintStart_toEndOf="@+id/Cos"
+        app:layout_constraintTop_toBottomOf="@+id/in" />
+
+    <Button
+        android:id="@+id/Sin"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sin"
+        app:layout_constraintStart_toEndOf="@+id/inv"
+        app:layout_constraintTop_toBottomOf="@+id/rad" />
+
+    <Button
+        android:id="@+id/in"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In"
+        app:layout_constraintStart_toEndOf="@+id/Sin"
+        app:layout_constraintTop_toBottomOf="@+id/x" />
 
     <Button
         android:id="@+id/rad"
+        style="@style/CalculatorButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="rad"
+        android:text="Rad"
         app:layout_constraintStart_toEndOf="@+id/deg"
         app:layout_constraintTop_toTopOf="@+id/deg" />
 
     <Button
         android:id="@+id/x"
+        style="@style/CalculatorButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="x!"
         app:layout_constraintStart_toEndOf="@+id/rad"
         app:layout_constraintTop_toTopOf="@+id/rad" />
+
+    <Button
+        android:id="@+id/Dori"
+        style="@style/CalculatorButton3"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:text="="
+        app:layout_constraintStart_toEndOf="@+id/point"
+        app:layout_constraintTop_toBottomOf="@+id/b3" />
+
+    <Button
+        android:id="@+id/btnMin"
+        style="@style/CalculatorButton1"
+        android:layout_width="82dp"
+        android:layout_height="48dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/b3"
+        app:layout_constraintTop_toBottomOf="@+id/btnMulti" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        style="@style/CalculatorButton1"
+        android:layout_width="82dp"
+        android:layout_height="48dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/Dori"
+        app:layout_constraintTop_toBottomOf="@+id/btnMin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
