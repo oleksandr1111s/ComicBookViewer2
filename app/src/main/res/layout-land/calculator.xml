@@ -3,15 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
+        android:background="@color/white"
         android:id="@+id/textView"
         android:layout_width="491dp"
         android:layout_height="114dp"
         android:layout_marginTop="16dp"
+        android:textSize="64sp"
+        android:gravity="end|center_vertical"
+        android:padding="16dp"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
@@ -310,7 +315,7 @@
         app:layout_constraintTop_toTopOf="@+id/rad" />
 
     <Button
-        android:id="@+id/Dori"
+        android:id="@+id/bEq"
         style="@style/CalculatorButton3"
         android:layout_width="88dp"
         android:layout_height="48dp"
@@ -333,7 +338,7 @@
         android:layout_width="82dp"
         android:layout_height="48dp"
         android:text="+"
-        app:layout_constraintStart_toEndOf="@+id/Dori"
+        app:layout_constraintStart_toEndOf="@+id/bEq"
         app:layout_constraintTop_toBottomOf="@+id/btnMin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
