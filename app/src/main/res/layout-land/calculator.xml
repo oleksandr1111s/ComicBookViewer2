@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"/>
 
     <Button
-        android:id="@+id/Dugka2"
+        android:id="@+id/dugka2"
         style="@style/CalculatorButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,8 +47,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="%"
-        app:layout_constraintStart_toEndOf="@+id/Dugka2"
-        app:layout_constraintTop_toTopOf="@+id/Dugka2" />
+        app:layout_constraintStart_toEndOf="@+id/dugka2"
+        app:layout_constraintTop_toTopOf="@+id/dugka2" />
 
     <Button
         android:id="@+id/ac"
@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:text="8"
         app:layout_constraintStart_toEndOf="@+id/b7"
-        app:layout_constraintTop_toBottomOf="@+id/Dugka2" />
+        app:layout_constraintTop_toBottomOf="@+id/dugka2" />
 
     <Button
         android:id="@+id/b9"
@@ -93,7 +93,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="/"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/back"
         app:layout_constraintStart_toEndOf="@+id/Vidsotok"
         app:layout_constraintTop_toBottomOf="@+id/ac" />
 
@@ -130,7 +130,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="*"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/back"
         app:layout_constraintStart_toEndOf="@+id/b9"
         app:layout_constraintTop_toBottomOf="@+id/bntDiv" />
 
@@ -326,19 +326,31 @@
     <Button
         android:id="@+id/btnMin"
         style="@style/CalculatorButton1"
-        android:layout_width="82dp"
-        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="-"
+        app:layout_constraintEnd_toEndOf="@+id/back"
         app:layout_constraintStart_toEndOf="@+id/b3"
         app:layout_constraintTop_toBottomOf="@+id/btnMulti" />
 
     <Button
         android:id="@+id/btnPlus"
         style="@style/CalculatorButton1"
-        android:layout_width="82dp"
-        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="+"
+        app:layout_constraintEnd_toEndOf="@+id/back"
         app:layout_constraintStart_toEndOf="@+id/bEq"
         app:layout_constraintTop_toBottomOf="@+id/btnMin" />
+
+    <Button
+        android:id="@+id/back"
+        style="@style/CalculatorButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="@+id/ac"
+        app:layout_constraintStart_toEndOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/ac" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

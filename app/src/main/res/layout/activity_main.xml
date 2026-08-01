@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/Dugka2"
+        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="back"
@@ -44,8 +44,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="/"
-        app:layout_constraintStart_toEndOf="@+id/Dugka2"
-        app:layout_constraintTop_toTopOf="@+id/Dugka2" />
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back" />
 
     <Button
         android:id="@+id/ac"
@@ -70,14 +70,14 @@
         android:layout_height="wrap_content"
         android:text="8"
         app:layout_constraintStart_toEndOf="@+id/Dugka1"
-        app:layout_constraintTop_toBottomOf="@+id/Dugka2" />
+        app:layout_constraintTop_toBottomOf="@+id/back" />
 
     <Button
         android:id="@+id/b9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="9"
-        app:layout_constraintStart_toEndOf="@+id/Dugka2"
+        app:layout_constraintStart_toEndOf="@+id/back"
         app:layout_constraintTop_toBottomOf="@+id/Vidsotok" />
 
     <Button

@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tvDisplay;
-    private boolean newNumber = true;
+    private boolean bNewNumber = true;
     private ImageView imageComic;
     private Button btnPrevious, btnNext, btnFirst;
 
@@ -40,13 +40,46 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.b8).setOnClickListener(v -> addDigit("8"));
         findViewById(R.id.b9).setOnClickListener(v -> addDigit("9"));
         findViewById(R.id.b0).setOnClickListener(v -> addDigit("0"));
+        findViewById(R.id.ac).setOnClickListener(v -> clearAll());
+        findViewById(R.id.back).setOnClickListener(v -> clearDigit());
     }
-    private void addDigit(String digit) {
-        if (newNumber) {
-            tvDisplay.setText(digit);
-            newNumber = false;
+
+    private void clearDigit() {
+        if (bNewNumber) {
+            return;
+        }
+        String text = tvDisplay.getText().toString();
+        if (text.length() > 1) {
+            tvDisplay.setText(text.substring(0, text.length() - 1));
         } else {
-            tvDisplay.append(digit);
+            tvDisplay.setText("0");
+            bNewNumber = true;
         }
     }
-}
+
+        private void clearAll () {
+            bNewNumber = true;
+            setTextSize();
+            tvDisplay.setText("0");
+        }
+
+        private void addDigit (String number){
+            if (tvDisplay.length() > 9) {
+                tvDisplay.setTextSize(32);
+            } else
+                tvDisplay.setTextSize(64);
+
+            if (bNewNumber) {
+                tvDisplay.setText(number);
+                bNewNumber = false;
+            } else {
+                tvDisplay.append(number);
+            }
+        }
+        private void setTextSize () {
+            if (tvDisplay.length() > 9) {
+                tvDisplay.setTextSize(32);
+            } else
+                tvDisplay.setTextSize(64);
+        }
+    }
